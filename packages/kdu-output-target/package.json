@@ -19,7 +19,8 @@
     "watch": "tsc --watch",
     "rollup": "rollup -c",
     "version": "npm run build",
-    "release": "np"
+    "release": "np",
+    "test": "echo \"Do nothing\""
   },
   "repository": {
     "type": "git",
