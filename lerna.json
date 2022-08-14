@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "packages/kdu-output-target"
+  ],
+  "version": "0.6.0",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["**/package.json", "**/package-lock.json"]
+    }
+  }
+}
