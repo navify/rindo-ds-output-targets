@@ -1,6 +1,6 @@
 {
   "name": "@rindo/react-output-target",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "React output target for @rindo/core components.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
