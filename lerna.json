@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/kdu-output-target"
+    "packages/kdu-output-target",
+    "packages/react-output-target"
   ],
   "version": "0.6.0",
   "command": {

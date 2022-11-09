@@ -1,0 +1,47 @@
+{
+  "name": "@rindo/react-output-target",
+  "version": "0.3.0",
+  "description": "React output target for @rindo/core components.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "react-component-lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc && npm run rollup",
+    "watch": "tsc --watch",
+    "rollup": "rollup -c",
+    "version": "npm run build",
+    "prettier": "npm run prettier.base -- --write",
+    "prettier.base": "prettier \"./({react-component-lib,src}/**/*.{ts,tsx,js,jsx})|*.{ts,tsx,js,jsx}\"",
+    "prettier.dry-run": "npm run prettier.base -- --list-different",
+    "release": "np",
+    "test": "echo \"Do nothing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navify/rindo-ds-output-targets.git"
+  },
+  "author": "Navify Team",
+  "homepage": "https://rindojs.web.app/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navify/rindo-ds-output-targets/issues"
+  },
+  "peerDependencies": {
+    "@rindo/core": "^2.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.0",
+    "@types/react-dom": "^16.7.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
